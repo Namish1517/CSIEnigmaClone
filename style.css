@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-image: url('ng.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.top-logos {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  z-index: 10;
+}
+
+.left-logo,
+.right-logo {
+  height: 60px;
+  object-fit: contain;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 0 20px;
+  z-index: 5;
+  position: relative;
+}
+
+.club-name {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.presents {
+  font-size: 0.9rem;
+  margin: 5px 0;
+  opacity: 0.8;
+}
+
+.event-title {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  letter-spacing: 2px;
+}
+
+.tagline {
+  font-size: 1rem;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+.theme {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  letter-spacing: 2px;
+  color: #00ffff;
+}
+
+.details {
+  font-size: 0.95rem;
+  margin: 4px 0;
+}
+
+.register-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.status {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.651);
+}
+.info-section {text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.info-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.info-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #00ffff;
+}
+
+.info-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-audience-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-box,
+.audience-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.about-box h2,
+.audience-box h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #00ffff;
+}
+
+.about-box ul,
+.audience-box ul {
+  list-style: disc inside;
+}
+
+.about-box li,
+.audience-box li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .about-audience-section {
+    flex-direction: row;
+  }
+}
+
+
+.contact-section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #00ffff;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.contact-card h3 {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.contact-card p {
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+  color: #cccccc;
+}
+
+
+@media (min-width: 768px) {
+  .contact-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: left;
+  }
+
+  .contact-section h2 {
+    grid-column: span 2;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .contact-section h2 {
+    grid-column: span 4;
+  }
+}
+.join-banner {
+  text-align: center;
+  padding: 20px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0059ff;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
